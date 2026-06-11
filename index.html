@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shivanie Virgin Omny Nantaka — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="nav-logo" onclick="showPage('home')">
+    <span>S</span>hivanie<span>.</span>
+  </div>
+  <ul class="nav-links">
+    <li><a onclick="showPage('home')">Home</a></li>
+    <li><a onclick="scrollToSection('about')">About</a></li>
+    <li><a onclick="scrollToSection('skills')">Skills</a></li>
+    <li><a onclick="scrollToSection('experience')">Experience</a></li>
+    <li><a onclick="scrollToSection('projects')">Projects</a></li>
+    <li><a onclick="scrollToSection('education')">Education</a></li>
+    <li><a onclick="scrollToSection('contact')">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ===== HOME PAGE ===== -->
+<div id="page-home" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">Available for opportunities</div>
+        <h1>Shivanie Virgin<br><span>Omny Nantaka</span></h1>
+        <p class="hero-subtitle">
+          <span>Software Engineer</span> · Data & AI Enthusiast
+        </p>
+        <p class="hero-desc">
+          Informatics graduate with expertise in Software Engineering, Data, and Artificial Intelligence. Building scalable web applications, crafting machine learning solutions, and transforming business processes through thoughtful digital engineering.
+        </p>
+        <div class="hero-ctas">
+          <button class="btn-primary" onclick="scrollToSection('projects')">View Projects →</button>
+          <button class="btn-outline" onclick="scrollToSection('contact')">Get in Touch</button>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num">4+</div>
+            <div class="stat-label">Projects Built</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">92%</div>
+            <div class="stat-label">ML Model Accuracy</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">3.57</div>
+            <div class="stat-label">GPA</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num">1+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-photo" id="hero-photo-circle">
+        <div class="photo-inner">
+          <img
+            src="assets/shivanie.jpeg"
+            alt="Shivanie Profile Photo"
+            class="profile-img"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-tag">About</div>
+    <h2 class="section-title">A little about me</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p>I'm an Informatics graduate from Telkom University with a strong passion for creating digital solutions that are both technically solid and meaningfully impactful. My journey spans full stack web development, data science, and machine learning always with a focus on clean architecture and real-world problem solving.</p>
+        <p>During my internship at PT Collega Inti Pertama (Telkom Group), I developed a Graph Attention Network model to predict ATM cash needs, achieving 92.38% accuracy. I then transitioned into a full stack engineer role, building production-grade web systems and freelance projects that help businesses operate more efficiently.</p>
+        <p>I'm analytical, adaptive to new technologies, and driven by the challenge of designing systems that truly make a difference. Whether it's building a legal document management SaaS, a real-time ATM monitoring dashboard, or an AI prediction model. I bring the same level of care and precision to every project.</p>
+        <div class="strength-list" style="margin-top: 20px;">
+          <span class="strength-chip">Full Stack Web Development</span>
+          <span class="strength-chip">System Analysis</span>
+          <span class="strength-chip">RESTful API Design</span>
+          <span class="strength-chip">Database Architecture</span>
+          <span class="strength-chip">Machine Learning</span>
+          <span class="strength-chip">SDLC</span>
+          <span class="strength-chip">Business Process Digitalization</span>
+        </div>
+      </div>
+      <div class="about-photo-wrap">
+        <div class="about-photo">
+          <img
+            src="assets/shivanie.jpeg"
+            alt="About Photo"
+            style="
+              width:100%;
+              height:100%;
+              object-fit:cover;
+              border-radius:18px;
+              display:block;
+            "
+          >
+        </div>
+          <div class="info-cards">
+            <div class="info-card">
+              <div class="info-card-label">Location</div>
+              <div class="info-card-value">Brebes, Central Java</div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-label">Education</div>
+              <div class="info-card-value">Telkom University</div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-label">Degree</div>
+              <div class="info-card-value">Bachelor of Informatics</div>
+            </div>
+            <div class="info-card">
+              <div class="info-card-label">Email</div>
+              <div class="info-card-value" style="font-size:.78rem;">nantakashiva@gmail.com</div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- SKILLS -->
+  <section class="section" id="skills">
+    <div class="section-tag">Skills</div>
+    <h2 class="section-title">Technical Expertise</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-card-title"><span class="skill-icon">💻</span>Programming Languages</div>
+        <div class="skill-tags">
+          <span class="tag accent">Java</span>
+          <span class="tag accent">Python</span>
+          <span class="tag accent">JavaScript</span>
+          <span class="tag accent">TypeScript</span>
+          <span class="tag accent">SQL</span>
+          <span class="tag accent">Dart</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-title"><span class="skill-icon">⚙️</span>Software Development</div>
+        <div class="skill-tags">
+          <span class="tag">React.js</span>
+          <span class="tag">Next.js</span>
+          <span class="tag">Vue.js</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Node.js</span>
+          <span class="tag">RESTful API</span>
+          <span class="tag">Flutter</span>
+          <span class="tag">Tailwind CSS</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-title"><span class="skill-icon">🗄️</span>Database & Data Engineering</div>
+        <div class="skill-tags">
+          <span class="tag">PostgreSQL</span>
+          <span class="tag">MySQL</span>
+          <span class="tag">Database Design</span>
+          <span class="tag">Data Processing</span>
+          <span class="tag">Data Analysis</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-title"><span class="skill-icon">🤖</span>Artificial Intelligence</div>
+        <div class="skill-tags">
+          <span class="tag">Machine Learning</span>
+          <span class="tag">Deep Learning</span>
+          <span class="tag">Graph Neural Network</span>
+          <span class="tag">Predictive Modeling</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-title"><span class="skill-icon">🔧</span>System & Software Engineering</div>
+        <div class="skill-tags">
+          <span class="tag">System Design</span>
+          <span class="tag">Requirement Analysis</span>
+          <span class="tag">SDLC</span>
+          <span class="tag">API Integration</span>
+          <span class="tag">Component Architecture</span>
+        </div>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card-title"><span class="skill-icon">🛠️</span>Tools & Platforms</div>
+        <div class="skill-tags">
+          <span class="tag">Git & GitHub</span>
+          <span class="tag">Postman</span>
+          <span class="tag">Figma</span>
+          <span class="tag">DBeaver</span>
+          <span class="tag">VS Code</span>
+          <span class="tag">Jupyter Notebook</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-tag">Experience</div>
+    <h2 class="section-title">Work Experience</h2>
+    <div class="timeline">
+
+      <div class="timeline-item">
+        <div class="timeline-dot">🤖</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-role">Data Scientist Intern</div>
+            <div class="timeline-date">Sep 2023 – Feb 2025</div>
+          </div>
+          <div class="timeline-company">PT Collega Inti Pertama (Telkom Group)</div>
+          <p class="timeline-desc">Demonstrated expertise in predictive modeling and machine learning by developing a Graph Attention Network (GAT) model to predict ATM cash needs. Led data-driven initiatives to optimize cash replenishment schedules, reduce the risk of cash shortages, and improve operational efficiency.</p>
+          <ul class="timeline-bullets">
+            <li>Developed an advanced GAT model to analyze spatial and temporal relationships between ATMs, capturing transaction trends and geographic dependencies.</li>
+            <li>Achieved model accuracy of 92.38%, with precision 91.40%, recall 92.38%, and F1-score 91.83%.</li>
+            <li>Provided actionable insights on cash stock levels and estimated days until depletion, supporting ATM management teams.</li>
+            <li>Improved operational efficiency by reducing cash shortage risks and ensuring service continuity.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot">⚡</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-role">Jr. Programmer</div>
+            <div class="timeline-date">Feb 2024 – May 2024</div>
+          </div>
+          <div class="timeline-company">PT Collega Inti Pratama (Telkom Group)</div>
+          <p class="timeline-desc">Contributed to the development of a web-based ATM monitoring system to facilitate real-time reporting and tracking of ATM disturbances and repair progress. Designed UI/UX using Figma and built the frontend with Vue.js, implemented backend using Spring Boot with RESTful API architecture.</p>
+          <ul class="timeline-bullets">
+            <li>Designed and developed a responsive, user-friendly ATM monitoring web application for efficient issue tracking.</li>
+            <li>Implemented RESTful API with Spring Boot, ensuring seamless frontend-backend integration.</li>
+            <li>Designed and optimized PostgreSQL database structure for efficient data storage and retrieval.</li>
+            <li>Implemented authentication and authorization features to secure access to sensitive system functions.</li>
+            <li>Automated ATM disturbance reporting and real-time repair status tracking, improving operational efficiency.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot">🌐</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-role">Full Stack Web Developer</div>
+            <div class="timeline-date">Jun 2025 – Sep 2025</div>
+          </div>
+          <div class="timeline-company">Freelance – Kantor Notaris IIP Affadin, S.H., M.Kn</div>
+          <p class="timeline-desc">Fully responsible for requirement analysis, architecture design, development, and deployment of a professional website and appointment management system for a Notary & PPAT Office. Developed the application using Next.js with a focus on scalability, maintainability, performance optimization, and user experience.</p>
+          <ul class="timeline-bullets">
+            <li>Developed a production-ready web application using Next.js and React.js with component-based architecture.</li>
+            <li>Designed and implemented an appointment workflow system with data validation and automated email notifications.</li>
+            <li>Built a consistent and responsive UI system with reusable components and modern design principles.</li>
+            <li>Managed the entire development process from requirement analysis, UI implementation, testing, debugging, to production deployment.</li>
+            <li>Optimized performance, routing structure, SEO readiness, and accessibility for long-term business support.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot">🏗️</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-role">Frontend Developer & System Analyst</div>
+            <div class="timeline-date">Nov 2025 – Mar 2026</div>
+          </div>
+          <div class="timeline-company">Freelance – E-Not (Digital Notary & PPAT Management System)</div>
+          <p class="timeline-desc">Designed and developed frontend architecture for an enterprise-grade legal management system targeted at Notary & PPAT Office operations. Focused on digital transformation of legal workflows, operational efficiency improvement, and structured document lifecycle management.</p>
+          <ul class="timeline-bullets">
+            <li>Conducted requirement analysis and system design, translating Notary & PPAT business processes into digital modules and technical specifications.</li>
+            <li>Drafted technical proposals and system blueprints covering feature planning, module structure, database concepts, user roles, workflows, and SaaS-readiness.</li>
+            <li>Developed frontend architecture using Next.js, React, TypeScript, and Tailwind CSS with a modular, reusable component approach.</li>
+            <li>Built core modules including case management, legal workflow tracking, payment monitoring, document management, client repository, reminder system, and audit trail dashboard.</li>
+            <li>Implemented complex features such as multi-step workflows, dynamic data tables, filtering systems, document generators, PDF preview, and role-based interface.</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
+    <div class="section-tag">Projects</div>
+    <h2 class="section-title">Featured Work</h2>
+    <div class="projects-grid">
+
+      <div class="project-card" onclick="showProjectDetail('gat-atm')">
+        <div class="project-banner" style="background: linear-gradient(135deg,#0d2137 0%,#0d3348 100%);">
+          🤖
+        </div>
+        <div class="project-body">
+          <div class="project-type">Machine Learning · Data Science</div>
+          <div class="project-title">ATM Cash Prediction System</div>
+          <p class="project-desc">Graph Attention Network (GAT) model to predict ATM cash needs by analyzing spatial and temporal patterns across ATM networks.</p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">GNN/GAT</span>
+            <span class="tag">Deep Learning</span>
+            <span class="tag">Predictive Modeling</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-date">Sep 2023 – Feb 2025</span>
+            <div class="project-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="showProjectDetail('atm-monitoring')">
+        <div class="project-banner" style="background: linear-gradient(135deg,#0d2237 0%,#172940 100%);">
+          📡
+        </div>
+        <div class="project-body">
+          <div class="project-type">Full Stack · Web Application</div>
+          <div class="project-title">ATM Monitoring Web System</div>
+          <p class="project-desc">Real-time web-based monitoring system to track ATM disturbances, manage repair workflows, and streamline operational reporting.</p>
+          <div class="project-tags">
+            <span class="tag">Vue.js</span>
+            <span class="tag">Spring Boot</span>
+            <span class="tag">PostgreSQL</span>
+            <span class="tag">REST API</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-date">Feb – May 2024</span>
+            <div class="project-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="showProjectDetail('notary-website')">
+        <div class="project-banner" style="background: linear-gradient(135deg,#12201a 0%,#1a3528 100%);">
+          ⚖️
+        </div>
+        <div class="project-body">
+          <div class="project-type">Full Stack · Freelance</div>
+          <div class="project-title">Notary Office Professional Website</div>
+          <p class="project-desc">Production-ready professional website with a digital appointment management system and automated email notifications for a Notary & PPAT office.</p>
+          <div class="project-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">React.js</span>
+            <span class="tag">Email Integration</span>
+            <span class="tag">SEO</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-date">Jun – Sep 2025</span>
+            <div class="project-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card" onclick="showProjectDetail('e-not')">
+        <div class="project-banner" style="background: linear-gradient(135deg,#1a1230 0%,#271844 100%);">
+          🏛️
+        </div>
+        <div class="project-body">
+          <div class="project-type">Frontend · System Analysis · SaaS</div>
+          <div class="project-title">E-Not — Digital Notary Management System</div>
+          <p class="project-desc">Enterprise-grade legal management SaaS platform for Notary & PPAT offices with case management, document workflows, audit trails, and role-based access control.</p>
+          <div class="project-tags">
+            <span class="tag">Next.js</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Tailwind CSS</span>
+            <span class="tag">SaaS</span>
+          </div>
+          <div class="project-footer">
+            <span class="project-date">Nov 2025 – Mar 2026</span>
+            <div class="project-arrow">→</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section-tag">Education & Certifications</div>
+    <h2 class="section-title">Academic Background</h2>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-degree">Bachelor of Informatics</div>
+        <div class="edu-school">Telkom University</div>
+        <div class="edu-meta">Graduated 2025</div>
+        <div class="gpa-badge">GPA 3.57 / 4.00</div>
+      </div>
+      <div class="edu-card">
+        <div class="edu-icon">📜</div>
+        <div class="edu-degree">Google IT Support Professional Certificate</div>
+        <div class="edu-school">Google / Coursera</div>
+        <div class="edu-meta">February 2022</div>
+      </div>
+    </div>
+
+    <!-- Organization -->
+    <h3 style="font-family:'Syne',sans-serif;font-weight:700;font-size:1.2rem;color:var(--heading);margin:50px 0 24px;letter-spacing:-.5px;">Organization Experience</h3>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot">🎯</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-role">Assistant Head — Community Engagement & Religious Affairs</div>
+            <div class="timeline-date">Jan – Dec 2023</div>
+          </div>
+          <div class="timeline-company">Informatics Bachelor's Student Association, Telkom University</div>
+          <p class="timeline-desc">Provided strategic leadership in planning and executing community engagement programs. Managed project coordination, team collaboration, and partnerships with external organizations.</p>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">📌</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-role">Expert Staff — Community Engagement & Religious Affairs</div>
+            <div class="timeline-date">Jan – Dec 2022</div>
+          </div>
+          <div class="timeline-company">Informatics Bachelor's Student Association, Telkom University</div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="timeline-dot">🏐</div>
+        <div class="timeline-content">
+          <div class="timeline-header">
+            <div class="timeline-role">Financial Secretary</div>
+            <div class="timeline-date">Jan 2022 – Dec 2023</div>
+          </div>
+          <div class="timeline-company">Telkom University Volleyball Club</div>
+          <p class="timeline-desc">Managed financial records, budgeting, and fund allocation to ensure transparency and efficiency in club operations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="section-divider"></div>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="section-tag">Contact</div>
+    <h2 class="section-title">Let's Connect</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <div class="contact-icon">📧</div>
+          <div>
+            <div class="contact-label">Email</div>
+            <div class="contact-value">nantakashiva@gmail.com</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📱</div>
+          <div>
+            <div class="contact-label">Phone</div>
+            <div class="contact-value">+62-822-9566-8769</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">💼</div>
+          <div>
+            <div class="contact-label">LinkedIn</div>
+            <div class="contact-value">Shivanie Virgin Omny Nantaka</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-icon">📍</div>
+          <div>
+            <div class="contact-label">Location</div>
+            <div class="contact-value">Brebes, Central Java, Indonesia</div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-side">
+        <p>I'm open to full-time roles, freelance projects, and collaborations in Software Engineering, Full Stack Development, or Data & AI. If you're looking for someone who can bridge the gap between technical depth and real business impact. Let's talk.</p>
+        <div class="strength-list">
+          <span class="strength-chip">Open to Full-Time</span>
+          <span class="strength-chip">Open to Freelance</span>
+          <span class="strength-chip">Remote Friendly</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Built by <span>Shivanie Virgin Omny Nantaka</span> · Software Engineer · Data & AI Enthusiast
+  </footer>
+</div><!-- end #page-home -->
+
+<script>
+  // Page routing — home is always active on index.html
+  function showPage(pageId) {
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    const page = document.getElementById('page-' + pageId);
+    if (page) {
+      page.classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  }
+
+  // Navigate to a separate project page
+  function showProjectDetail(projectId) {
+    window.location.href = 'projects/' + projectId + '.html';
+  }
+
+  function scrollToSection(sectionId) {
+    if (!document.getElementById('page-home').classList.contains('active')) {
+      showPage('home');
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 150);
+    } else {
+      const el = document.getElementById(sectionId);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+
+  // Handle hash links on load (e.g. when returning from a project page via #projects)
+  window.addEventListener('load', () => {
+    const hash = window.location.hash.slice(1);
+    if (hash) {
+      const el = document.getElementById(hash);
+      if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+  });
+</script>
+</body>
+</html>
